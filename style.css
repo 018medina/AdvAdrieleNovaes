@@ -1,0 +1,449 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #333;
+  /* background-color: #e6e6e6; */
+  color: #fff;
+  font-family: "Avegas", serif;
+}
+
+header,
+footer {
+  padding: 12px 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+h2 {
+  font-family: "Avegas", serif;
+  font-size: 2.5em;
+  margin: 0.5em 0;
+  text-align: center;
+  font-weight: 100;
+  /* color: #333; */
+}
+
+h3 {
+  font-family: "Avegas", serif;
+  font-weight: 100;
+  /* color: #333; */
+}
+
+/* p {
+  color: #333;
+} */
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.imgLogo {
+  width: 80px;
+}
+
+a {
+  color: #4d0303;
+  text-decoration: none;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.pad42 {
+  padding: 42px 42px;
+}
+
+.identacaoPadrao {
+  width: 80%;
+  margin: auto;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txtBlack {
+  color: black;
+  color: #333;
+  text-align: center;
+}
+
+.txtVinho {
+  color: #4d0303;
+  text-align: center;
+}
+
+.MiniCardFoto {
+  padding: 10px 30px;
+  background-image: linear-gradient(90deg, #bb9a40 0%, #f4d03f 100%);
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  top: -50px;
+  /* left: 70px; */
+  width: 200px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconsImport {
+  font-size: 35px;
+}
+
+.iconsImport2 {
+  font-size: 26px;
+}
+
+.backgroundContainer {
+  position: relative;
+  width: 100%;
+  /* height: 80vh; */
+  overflow: hidden;
+}
+
+.backgroundContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/balanca.jpg);
+  background-size: cover;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.contentBackground {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-button a img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.whatsapp-button a img:hover {
+  transform: scale(1.1);
+}
+
+.identaServicos {
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.identaServicosSingular {
+  flex-direction: column;
+  padding: 30px;
+  background-color: #f7f7f7;
+  border-radius: 6px;
+  min-width: 260px;
+  max-width: 260px;
+  min-height: 170px;
+  max-height: 170px;
+}
+
+.ajustaRodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.rodapeMaxWid {
+  max-width: 20%;
+}
+
+header ul li a,
+footer ul li a {
+  color: #4d0303;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* TALVEZ PRECISE AJUSTAR PARA FICAR RESPONSIVO COISAS ABAIXO: */
+
+ul li {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 17px;
+}
+
+.backgroundContainer2 {
+  position: relative;
+  width: 50%;
+  height: 72vh;
+  /* overflow: hidden; */
+}
+
+.backgroundContainer2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/advogada.jpg);
+  border-radius: 10px;
+  background-size: cover;
+  opacity: 1;
+  z-index: -1;
+}
+
+.cardPrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  position: relative;
+  left: 50%;
+  text-align: end;
+}
+
+.tituloAdv {
+  font-family: "Avegas", serif;
+  font-size: 4em;
+  margin: 0.5em 0;
+  text-align: end;
+  font-weight: 100;
+}
+
+#btn-mobile {
+  display: none;
+  background: #e6e6e6;
+}
+
+#header {
+  background-color: #e6e6e6;
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .identacaoPadrao {
+    width: 90%;
+    margin: auto;
+  }
+
+  section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .MiniCardFoto {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  a {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+
+  .pad42 {
+    padding: 20px;
+  }
+
+  .identaServicos {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .identaServicosSingular {
+    padding: 15px;
+  }
+
+  .ajustaRodape {
+    flex-direction: column;
+  }
+
+  .rodapeMaxWid {
+    max-width: 80%;
+  }
+
+  .cardPrincipal {
+    left: 0;
+    text-align: end;
+  }
+
+  .backgroundContainer2::before {
+    opacity: 0.4;
+  }
+
+  .tituloAdv {
+    font-size: 1.8em;
+    text-align: end;
+  }
+}
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background-color: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    /* height: calc(100vh - 70px); */
+    height: 100%;
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+@media (max-width: 480px) {
+  .identacaoPadrao {
+    width: 90%;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  .MiniCardFoto {
+    width: 160px;
+    height: 40px;
+  }
+
+  img {
+    max-width: 80%;
+    border-radius: 8px;
+  }
+
+  .backgroundContainer {
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .identaServicos {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .identaServicosSingular {
+    padding: 7px;
+  }
+
+  .ajustaRodape {
+    flex-direction: column;
+  }
+
+  .rodapeMaxWid {
+    max-width: 80%;
+  }
+}
