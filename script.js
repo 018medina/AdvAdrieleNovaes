@@ -6,5 +6,9 @@ function toggleMenu(event){
     nav.classList.toggle('active');
 }
 
+function auxToggleMenu(){    
+    nav.classList.toggle('active');
+}
+
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
