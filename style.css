@@ -1,15 +1,24 @@
 body {
   margin: 0px;
   padding: 0px;
-  /* background-color: #333; */
   background-color: #e6e6e6;
   color: #fff;
-  font-family: "Avegas", serif;
+  font-family: "Poppins", serif;
+  font-style: normal;
 }
 
 header,
 footer {
-  padding: 12px 0;
+  padding: 12px 0 12px 0;
+  width: 90%;
+  margin: auto;
+}
+
+header ul li a,
+footer ul li a {
+  color: #4d0303;
+  text-decoration: none;
+  list-style: none;
 }
 
 ul {
@@ -18,9 +27,14 @@ ul {
   padding: 0px;
 }
 
+ul li {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 17px;
+}
+
 section {
   display: flex;
-  justify-content: space-evenly;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -28,23 +42,23 @@ section {
 }
 
 h2 {
-  font-family: "Avegas", serif;
   font-size: 2.5em;
   margin: 0.5em 0;
   text-align: center;
-  font-weight: 100;
-  /* color: #333; */
+  font-weight: 700;
+}
+
+.tituloH2 {
+  font-size: 2em;
+  margin: 0.5em 0;
+  text-align: center;
+  font-weight: 700;
 }
 
 h3 {
-  font-family: "Avegas", serif;
-  font-weight: 100;
-  /* color: #333; */
+  margin: 5px 0 5px 0;
+  font-weight: 400;
 }
-
-/* p {
-  color: #333;
-} */
 
 img {
   width: 100%;
@@ -61,6 +75,7 @@ a {
   color: #4d0303;
   text-decoration: none;
   padding: 5px;
+  /* font-weight: 400; */
 }
 
 a:hover {
@@ -77,7 +92,7 @@ a:hover {
 }
 
 .identacaoPadrao {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -98,56 +113,8 @@ a:hover {
   text-align: center;
 }
 
-.MiniCardFoto {
-  padding: 10px 30px;
-  background-image: linear-gradient(90deg, #bb9a40 0%, #f4d03f 100%);
-  border-radius: 10px;
-  position: relative;
-  z-index: 1;
-  top: -50px;
-  /* left: 70px; */
-  width: 200px;
-  height: 45px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .iconsImport {
   font-size: 35px;
-}
-
-.iconsImport2 {
-  font-size: 26px;
-}
-
-.backgroundContainer {
-  position: relative;
-  width: 100%;
-  /* height: 80vh; */
-  overflow: hidden;
-}
-
-.backgroundContainer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(img/balanca.jpg);
-  background-size: cover;
-  opacity: 0.1;
-  z-index: -1;
-}
-
-.contentBackground {
-  position: relative;
-  z-index: 1;
-  color: white;
-  text-align: center;
-  padding-top: 50px;
 }
 
 .whatsapp-button {
@@ -188,78 +155,10 @@ a:hover {
 .ajustaRodape {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-}
-
-.rodapeMaxWid {
-  max-width: 20%;
-}
-
-header ul li a,
-footer ul li a {
-  color: #4d0303;
-  text-decoration: none;
-  list-style: none;
+  justify-content: space-between;
 }
 
 /* TALVEZ PRECISE AJUSTAR PARA FICAR RESPONSIVO COISAS ABAIXO: */
-
-ul li {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 17px;
-}
-
-.backgroundContainer2 {
-  position: relative;
-  width: 50%;
-  height: 80vh;
-  /* overflow: hidden; */
-}
-
-.backgroundContainer2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 100%;
-  height: 100%;
-  background-image: url(img/advogada.jpg);
-  border-radius: 4px;
-  opacity: 0.9;
-  z-index: -1;
-  background-size: cover;
-}
-
-.back2::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  /* opacity: 0.8; */
-  z-index: -1;
-  background-color: #808080;
-}
-
-.cardPrincipal {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: center;
-  position: relative;
-  left: 50%;
-  text-align: end;
-}
-
-.tituloAdv {
-  font-family: "Avegas", serif;
-  font-size: 4em;
-  margin: 0.5em 0;
-  text-align: end;
-  font-weight: 100;
-}
 
 #btn-mobile {
   display: none;
@@ -270,10 +169,10 @@ ul li {
   background-color: #e6e6e6;
   box-sizing: border-box;
   height: 70px;
-  padding: 1rem;
+  /* padding: 1rem; */
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #menu {
@@ -287,7 +186,7 @@ ul li {
   padding: 0.5rem;
 }
 
-.EntreContato {
+.entreContato {
   color: white;
   background-color: #4d0303;
   background-color: #4dcd5c;
@@ -296,28 +195,32 @@ ul li {
   padding: 8px;
   border-radius: 6px;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 0.1px;
 }
 
-.EntreContato:hover {
+.entreContato:hover {
   background-color: #78bd80;
 }
 
-@media (max-width: 768px) {
-  .identacaoPadrao {
-    width: 90%;
-    margin: auto;
-  }
+.shape {
+  background-color: #4d0303;
+  /* width: 50%; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* border-radius: 40% 30% 0% 20%; */
+  border-radius: 20% 20% 20% 20%;
+  top: 70px;
+  /* right: 50%; */
+  right: 35%;
+  z-index: -1;
+}
 
+@media (max-width: 768px) {
   section {
     flex-direction: column;
     text-align: center;
-  }
-
-  .MiniCardFoto {
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   h2 {
@@ -344,29 +247,6 @@ ul li {
 
   .ajustaRodape {
     flex-direction: column;
-  }
-
-  .rodapeMaxWid {
-    max-width: 80%;
-  }
-
-  .cardPrincipal {
-    left: 20%;
-    text-align: end;
-  }
-
-  .backgroundContainer2::before {
-    left: -30%;
-    /* opacity: 0.4; */
-  }
-
-  /* .back2::after {
-    left: 30%;
-  } */
-
-  .tituloAdv {
-    font-size: 1.8em;
-    text-align: end;
   }
 }
 
@@ -440,11 +320,6 @@ ul li {
 }
 
 @media (max-width: 480px) {
-  .identacaoPadrao {
-    width: 90%;
-    margin: auto;
-  }
-
   h2 {
     font-size: 1.8em;
   }
@@ -453,21 +328,9 @@ ul li {
     font-size: 16px;
   }
 
-  .MiniCardFoto {
-    width: 160px;
-    height: 40px;
-  }
-
   img {
     max-width: 80%;
     border-radius: 8px;
-  }
-
-  .backgroundContainer {
-    /* position: relative; */
-    width: 100%;
-    height: auto;
-    overflow: hidden;
   }
 
   .identaServicos {
@@ -481,9 +344,5 @@ ul li {
 
   .ajustaRodape {
     flex-direction: column;
-  }
-
-  .rodapeMaxWid {
-    max-width: 80%;
   }
 }
