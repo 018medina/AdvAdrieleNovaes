@@ -60,10 +60,16 @@ img {
 a {
   color: #4d0303;
   text-decoration: none;
+  padding: 5px;
 }
 
 a:hover {
   background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.aHover {
+  background: transparent !important;
 }
 
 .pad42 {
@@ -207,7 +213,7 @@ ul li {
 .backgroundContainer2 {
   position: relative;
   width: 50%;
-  height: 72vh;
+  height: 80vh;
   /* overflow: hidden; */
 }
 
@@ -220,9 +226,12 @@ ul li {
   height: 100%;
   background-image: url(img/advogada.jpg);
   border-radius: 10px;
-  background-size: cover;
-  opacity: 1;
+  opacity: 0.8;
   z-index: -1;
+  background-size: cover;
+  /* background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
 }
 
 .cardPrincipal {
@@ -267,6 +276,23 @@ ul li {
 #menu a {
   display: block;
   padding: 0.5rem;
+}
+
+.EntreContato {
+  color: white;
+  background-color: #4d0303;
+  background-color: #4dcd5c;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 0.1px;
+}
+
+.EntreContato:hover {
+  background-color: #78bd80;
 }
 
 @media (max-width: 768px) {
