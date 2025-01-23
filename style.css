@@ -153,15 +153,15 @@ a:hover {
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 0px;
   z-index: 1000;
 }
 
 .whatsapp-button a img {
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
   transition: transform 0.3s;
 }
 
@@ -342,7 +342,7 @@ ul li {
   }
 
   .cardPrincipal {
-    left: 0;
+    left: 5%;
     text-align: end;
   }
 
@@ -395,7 +395,7 @@ ul li {
   }
 
   #hamburger {
-    border-top: 2px solid;
+    border-top: 2px solid black;
     width: 20px;
   }
 
@@ -405,7 +405,7 @@ ul li {
     display: block;
     width: 20px;
     height: 2px;
-    background: currentColor;
+    background: black;
     margin-top: 5px;
     transition: 0.3s;
     position: relative;
