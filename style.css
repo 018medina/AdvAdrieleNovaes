@@ -3,7 +3,7 @@ body {
   padding: 0px;
   background-color: #e6e6e6;
   color: #fff;
-  font-family: "Poppins", serif;
+  font-family: "League Spartan", "Poppins", serif;
   font-style: normal;
 }
 
@@ -42,14 +42,16 @@ section {
 }
 
 h2 {
-  font-size: 2.5em;
+  /* font-size: 2.5em; */
+  font-size: 4em;
   margin: 0.5em 0;
   text-align: center;
   font-weight: 700;
 }
 
 .tituloH2 {
-  font-size: 2em;
+  /* font-size: 2em; */
+  font-size: 2.5em;
   margin: 0.5em 0;
   text-align: center;
   font-weight: 700;
@@ -58,6 +60,11 @@ h2 {
 h3 {
   margin: 5px 0 5px 0;
   font-weight: 400;
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 1.2em;
 }
 
 img {
@@ -76,6 +83,7 @@ a {
   text-decoration: none;
   padding: 5px;
   /* font-weight: 400; */
+  font-size: 1.2em;
 }
 
 a:hover {
@@ -212,8 +220,8 @@ a:hover {
   /* border-radius: 40% 30% 0% 20%; */
   border-radius: 20% 20% 20% 20%;
   top: 70px;
-  /* right: 50%; */
-  right: 35%;
+  right: 50%;
+  /* right: 35%; */
   z-index: -1;
 }
 
@@ -340,18 +348,30 @@ a:hover {
   }
 
   h2 {
-    margin: 0.1em 0;
+    margin: 0.8em 0;
+  }
+
+  .tituloH2 {
+    font-size: 1.8em;
   }
 
   .textoCel {
     color: #4d0303;
   }
+
+  .padBottom {
+    padding-bottom: 50px;
+  }
+
+  .textoChecks {
+    text-align: start;
+  }
 }
 
 @media (max-width: 480px) {
-  h2 {
+  /* h2 {
     font-size: 1.8em;
-  }
+  } */
 
   a {
     font-size: 16px;
