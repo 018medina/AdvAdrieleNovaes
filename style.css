@@ -10,7 +10,7 @@ body {
 header,
 footer {
   padding: 12px 0 12px 0;
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 
@@ -42,7 +42,6 @@ section {
 }
 
 h2 {
-  /* font-size: 2.5em; */
   font-size: 4em;
   margin: 0.5em 0;
   text-align: center;
@@ -50,7 +49,6 @@ h2 {
 }
 
 .tituloH2 {
-  /* font-size: 2em; */
   font-size: 2.5em;
   margin: 0.5em 0;
   text-align: center;
@@ -60,11 +58,11 @@ h2 {
 h3 {
   margin: 5px 0 5px 0;
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 1.6em;
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 img {
@@ -82,7 +80,9 @@ a {
   color: #4d0303;
   text-decoration: none;
   padding: 5px;
-  /* font-weight: 400; */
+}
+
+header a {
   font-size: 1.2em;
 }
 
@@ -100,7 +100,7 @@ a:hover {
 }
 
 .identacaoPadrao {
-  width: 90%;
+  width: 75%;
   margin: auto;
 }
 
@@ -151,7 +151,7 @@ a:hover {
 
 .identaServicosSingular {
   flex-direction: column;
-  padding: 30px;
+  padding: 0px;
   background-color: #f7f7f7;
   border-radius: 6px;
   min-width: 260px;
@@ -213,31 +213,105 @@ a:hover {
 
 .shape {
   background-color: #4d0303;
-  /* width: 50%; */
   width: 100%;
   height: 100%;
   position: absolute;
-  /* border-radius: 40% 30% 0% 20%; */
   border-radius: 20% 20% 20% 20%;
   top: 70px;
-  right: 50%;
-  /* right: 35%; */
+  right: 35%;
   z-index: -1;
+}
+
+.ajustaTextoPrincipal {
+  transform: translateX(-95px);
+}
+
+@media (max-width: 1550px) {
+  img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  h2 {
+    font-size: 2.8em;
+  }
+
+  .tituloH2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .shape {
+    right: 40%;
+  }
+
+  .ajustaTextoPrincipal {
+    transform: translateX(-115px);
+  }
+}
+
+@media (max-width: 1350px) {
+  header a {
+    font-size: 1em;
+  }
+  img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  .tituloH2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .ajustaTextoPrincipal {
+    transform: translateX(-100px);
+  }
+}
+
+@media (max-width: 1100px) {
+  img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  h2 {
+    font-size: 2.3em;
+  }
+
+  .tituloH2 {
+    font-size: 1.3em;
+  }
+
+  .ajustaTextoPrincipal {
+    transform: translateX(-70px);
+  }
+
+  .ajustaTextoCentro {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
   section {
     flex-direction: column;
     text-align: center;
-  }
-
-  h2 {
-    font-size: 2em;
-  }
-
-  a {
-    font-size: 16px;
-    padding: 8px 20px;
   }
 
   .pad42 {
@@ -249,16 +323,19 @@ a:hover {
     flex-wrap: wrap;
   }
 
-  .identaServicosSingular {
+  /* .identaServicosSingular {
     padding: 15px;
-  }
+  } */
 
   .ajustaRodape {
     flex-direction: column;
   }
-}
 
-@media (max-width: 600px) {
+  .ajustaTextoPrincipal {
+    transform: translateX(0px);
+  }
+
+  /* header etc */
   #menu {
     display: block;
     position: absolute;
@@ -284,7 +361,6 @@ a:hover {
     padding: 1rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-    font-size: 16px;
   }
 
   #btn-mobile {
@@ -363,35 +439,11 @@ a:hover {
     padding-bottom: 50px;
   }
 
+  .margBottom {
+    margin-bottom: 22px;
+  }
+
   .textoChecks {
     text-align: start;
-  }
-}
-
-@media (max-width: 480px) {
-  /* h2 {
-    font-size: 1.8em;
-  } */
-
-  a {
-    font-size: 16px;
-  }
-
-  img {
-    max-width: 80%;
-    border-radius: 8px;
-  }
-
-  .identaServicos {
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-
-  .identaServicosSingular {
-    padding: 7px;
-  }
-
-  .ajustaRodape {
-    flex-direction: column;
   }
 }
