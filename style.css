@@ -317,6 +317,35 @@ a:hover {
     transform: rotate(-135deg);
     top: -7px;
   }
+
+  .shape {
+    background-color: transparent;
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    border-radius: 20% 20% 20% 20%;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+  }
+
+  .bordaCel {
+    background-color: #4d0303;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .auxMarginTop {
+    margin-top: 35px !important;
+  }
+
+  h2 {
+    margin: 0.1em 0;
+  }
+
+  .textoCel {
+    color: #4d0303;
+  }
 }
 
 @media (max-width: 480px) {
