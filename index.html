@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" type="text/javascript"></script>
+    <script src="scroll.js" type="text/javascript"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
     <!-- Para funcionamento de ícones -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Adriéle Silveira Novaes</title>
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,6 +25,12 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
 
   <body>
@@ -32,11 +45,18 @@
           </button>
           <ul id="menu">
             <li>
-              <a href="#header" onclick="auxToggleMenu()">Home</a>
-            </li>
-            <li>
               <a href="#SecAreasAtuacao" onclick="auxToggleMenu()"
                 >Áreas de atuação</a
+              >
+            </li>
+            <li>
+              <a href="#SecDiferenciais" onclick="auxToggleMenu()"
+                >Diferenciais</a
+              >
+            </li>
+            <li>
+              <a href="#SecFiquePorDentro" onclick="auxToggleMenu()"
+                >Fique por dentro</a
               >
             </li>
             <li>
@@ -60,18 +80,18 @@
 
         <img
           style="opacity: 0.8"
-          class="bordaCel"
+          class="bordaCel animaEsquerda"
           src="./img/advogadaSemFundo.png"
           alt=""
         />
 
-        <div class="ajustaTextoPrincipal">
+        <div class="ajustaTextoPrincipal animaEsquerda">
           <h2 class="textoCel">Adriéle Novaes</h2>
           <h3 class="textoCel ajustaTextoCentro">ADVOGADA</h3>
           <h3 class="textoCel margBottom ajustaTextoCentro">OAB/SP 519.203</h3>
         </div>
 
-        <div>
+        <div class="animaDireita">
           <h3
             class="textoChecks"
             style="color: #4d0303"
@@ -131,33 +151,33 @@
             ÁREAS DE ATUAÇÃO
           </h2>
           <div
-            class="flexCenter identaServicos"
+            class="flexCenter identaServicos animaEsquerda"
             style="margin-top: 10px; margin-bottom: 50px"
           >
             <div class="flexCenter identaServicosSingular">
               <i class="iconsImport fa-solid fa-car" style="color: #4d0303"></i>
-              <h3 class="txtVinho">Acidentes e Indenizações</h3>
+              <h3 class="txtVinho">Acidentes e indenizações</h3>
             </div>
             <div class="flexCenter identaServicosSingular">
               <i
                 class="iconsImport fa-solid fa-phone-volume"
                 style="color: #4d0303"
               ></i>
-              <h3 class="txtVinho">Cobranças Abusivas</h3>
+              <h3 class="txtVinho">Cobranças abusivas</h3>
             </div>
             <div class="flexCenter identaServicosSingular">
               <i
                 class="iconsImport fa-solid fa-file-invoice-dollar"
                 style="color: #4d0303"
               ></i>
-              <h3 class="txtVinho">Golpes Financeiros</h3>
+              <h3 class="txtVinho">Golpes financeiros</h3>
             </div>
             <div class="flexCenter identaServicosSingular">
               <i
                 class="iconsImport fa-solid fa-circle-dollar-to-slot"
                 style="color: #4d0303"
               ></i>
-              <h3 class="txtVinho">Negativação ou Protesto Indevidos</h3>
+              <h3 class="txtVinho">Negativação ou protesto indevidos</h3>
             </div>
             <div class="flexCenter identaServicosSingular">
               <i
@@ -165,7 +185,7 @@
                 style="color: #4d0303"
               ></i>
               <h3 class="txtVinho">
-                Problemas Aéreos: Overbooking, Atrasos, Estornos
+                Problemas aéreos: overbooking, atrasos, estornos
               </h3>
             </div>
             <div class="flexCenter identaServicosSingular">
@@ -174,7 +194,7 @@
                 style="color: #4d0303"
               ></i>
               <h3 class="txtVinho">
-                Compras On-line: Cancelamento, Estorno Devolução
+                Compras on-line: cancelamento, estorno, devolução
               </h3>
             </div>
           </div>
@@ -194,6 +214,7 @@
       </section>
 
       <section
+        id="SecDiferenciais"
         style="
           background-color: #ffffff;
           padding-top: 50px;
@@ -216,7 +237,10 @@
             DIFERENCIAIS
           </h2>
 
-          <div style="display: flex; flex-direction: column">
+          <div
+            class="animaDireita"
+            style="display: flex; flex-direction: column"
+          >
             <h3 class="textoChecks" style="margin: 5px 0 5px 0; color: #4d0303">
               <i class="fa-solid fa-check"></i>
               Advocacia especializada e humanizada
@@ -250,6 +274,7 @@
       </section>
 
       <section
+        id="SecFiquePorDentro"
         style="
           background-color: #ffffff;
           padding-top: 50px;
@@ -268,7 +293,10 @@
             FIQUE POR DENTRO
           </h2>
 
-          <div style="margin-bottom: 50px" class="flexCenter identaServicos">
+          <div
+            style="margin-bottom: 50px"
+            class="flexCenter identaServicos animaEsquerda"
+          >
             <blockquote
               style="max-height: 400px"
               class="instagram-media testeCel"
@@ -841,18 +869,6 @@
             </blockquote>
             <script async src="//www.instagram.com/embed.js"></script>
           </div>
-
-          <!-- <div
-            style="display: flex; justify-content: center; align-items: center"
-          >
-            <a
-              class="entreContato"
-              href="https://wa.me/5518981836168"
-              target="_blank"
-              ><i style="padding-right: 10px" class="fa-brands fa-whatsapp"></i
-              >Entre em contato</a
-            >
-          </div> -->
         </div>
       </section>
 
@@ -893,5 +909,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="scroll.js"></script>
   </body>
 </html>
