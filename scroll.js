@@ -3,13 +3,13 @@ $(document).ready(function() {
     ScrollReveal({ reset: true });
 
     animaDireita();
-    animaEsquerda(); 
+    animaEsquerda();
 });
 
 function animaDireita(){
     ScrollReveal().reveal('.animaDireita', {
         origin: 'right',
-        duration: 2200,
+        duration: 2000,
         distance: '20%'
     })
 }
@@ -17,7 +17,7 @@ function animaDireita(){
 function animaEsquerda(){
     ScrollReveal().reveal('.animaEsquerda', {
         origin: 'left',
-        duration: 2200,
+        duration: 2000,
         distance: '20%'
     })
 }
