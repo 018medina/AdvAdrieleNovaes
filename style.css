@@ -245,6 +245,55 @@ a:hover {
   transform: translateX(-95px);
 }
 
+.cardT {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  /* padding: 20px; */
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cardT:hover {
+  transform: scale(1.05);
+}
+
+.descricaoAreas {
+  /* position: absolute;
+  top: 150px;
+  background: pink;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  transition: 2s;
+  transform: matrix(); */
+  width: 245px;
+  height: 130px;
+  opacity: 0; /* Inicialmente invisível */
+  visibility: hidden; /* Garante que o elemento não ocupa espaço quando invisível */
+  position: absolute;
+  /* bottom: 10px; */
+  /* top: 10px; */
+  /* left: 10px; */
+  /* right: 10px; */
+  background-color: #4d0303;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* A transição de opacidade e visibilidade */
+}
+
+.cardT:hover .descricaoAreas {
+  opacity: 1; /* Torna visível ao passar o mouse */
+  visibility: visible; /* Garante que o elemento se torne visível */
+  transition: opacity 0.3s ease, visibility 0s linear 0s; /* A transição de opacidade para visibilidade */
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 1550px) {
   img {
     width: 100%;
