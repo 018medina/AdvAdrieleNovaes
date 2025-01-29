@@ -3,17 +3,17 @@ html {
 }
 
 body::-webkit-scrollbar {
-  width: 12px; /* width of the entire scrollbar */
+  width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-  background: transparent; /* color of the tracking area */
+  background: transparent;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #4d0303; /* color of the scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
-  border: 3px solid #e6e6e6; /* creates padding around scroll thumb */
+  background-color: #4d0303;
+  border-radius: 20px;
+  border: 3px solid #e6e6e6;
 }
 
 body {
@@ -196,7 +196,6 @@ a:hover {
   background-color: #e6e6e6;
   box-sizing: border-box;
   height: 70px;
-  /* padding: 1rem; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -248,7 +247,6 @@ a:hover {
 .cardT {
   background-color: #f0f0f0;
   border-radius: 10px;
-  /* padding: 20px; */
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -260,35 +258,23 @@ a:hover {
 }
 
 .descricaoAreas {
-  /* position: absolute;
-  top: 150px;
-  background: pink;
-  width: 300px;
-  height: 150px;
-  border-radius: 10px;
-  transition: 2s;
-  transform: matrix(); */
   width: 245px;
   height: 130px;
-  opacity: 0; /* Inicialmente invisível */
-  visibility: hidden; /* Garante que o elemento não ocupa espaço quando invisível */
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
-  /* bottom: 10px; */
-  /* top: 10px; */
-  /* left: 10px; */
-  /* right: 10px; */
   background-color: #4d0303;
   color: white;
   padding: 10px;
   border-radius: 5px;
   font-size: 14px;
-  transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* A transição de opacidade e visibilidade */
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
 }
 
 .cardT:hover .descricaoAreas {
-  opacity: 1; /* Torna visível ao passar o mouse */
-  visibility: visible; /* Garante que o elemento se torne visível */
-  transition: opacity 0.3s ease, visibility 0s linear 0s; /* A transição de opacidade para visibilidade */
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s linear 0s;
   align-items: start;
   justify-content: start;
   flex-wrap: wrap;
