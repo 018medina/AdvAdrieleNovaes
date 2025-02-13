@@ -362,6 +362,17 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
   section {
     flex-direction: column;
     text-align: center;
