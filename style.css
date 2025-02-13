@@ -378,6 +378,11 @@ a:hover {
     text-align: center;
   }
 
+  .identacaoPadrao {
+    width: 95%;
+    margin: auto;
+  }
+
   .pad42 {
     padding: 20px;
   }
